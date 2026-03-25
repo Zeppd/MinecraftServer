@@ -27,7 +27,7 @@ printf "eula=true\n" > eula.txt
 cat > start.sh <<'EOF'
 #!/usr/bin/env bash
 set -euo pipefail
-java -Xms1G -Xmx2G -jar paper.jar --nogui
+java -Xms6144M -Xmx6144M -jar paper.jar --nogui
 EOF
 
 chmod +x start.sh
